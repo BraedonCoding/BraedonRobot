@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0781c99-7ee1-4455-96f9-d024711335b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env_local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env_local" beforeDir="false" afterPath="$PROJECT_DIR$/.env_local" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     "Python.main.executor": "Run",
     "Python.speech_recognition.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "adding__env"
   }
 }]]></component>
   <component name="RunManager">
