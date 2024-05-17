@@ -1,6 +1,2 @@
-####################################################
-# The Following files below are not tracked by git #
-####################################################
-
+.idea
 .env_local
-.idea/
