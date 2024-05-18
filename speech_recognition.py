@@ -1,5 +1,21 @@
 import os
+import random
+
 import azure.cognitiveservices.speech as speechsdk
+
+
+# This method DOES NOT SERVE ANY PRACTICAL PURPOSE \
+# besides the fact that it will remind the user that
+# Gabe is fat, like very fat, like extremely fat
+def is_gabe_fat():
+    # This is the odds that this message will play out
+    random_percent = 0.1
+    random_float = random.random()
+
+    if random_float <= 0.1:
+        return "Gabe is fat btw, like omg look at how fat he is lol. "
+    else:
+        return ""
 
 
 def recognize_from_microphone():
@@ -11,11 +27,12 @@ def recognize_from_microphone():
     audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
 
+    secret_message = is_gabe_fat()
     print("Speak into your microphone.")
     speech_recognition_result = speech_recognizer.recognize_once_async().get()
 
     if speech_recognition_result.reason == speechsdk.ResultReason.RecognizedSpeech:
-        print("Recognized: {}".format(speech_recognition_result.text))
+        print(secret_message + "Recognized: {}".format(speech_recognition_result.text))
     elif speech_recognition_result.reason == speechsdk.ResultReason.NoMatch:
         print("No speech could be recognized: {}".format(speech_recognition_result.no_match_details))
     elif speech_recognition_result.reason == speechsdk.ResultReason.Canceled:
